@@ -1,4 +1,4 @@
-from code.main import suma, resta, multiplicacion, division
+from code.main import suma, resta, multiplicacion, division, modulo
 import pytest
 
 @pytest.mark.parametrize(
@@ -30,3 +30,6 @@ def test_suma(a, b, valor_esperado):
 @pytest.mark.xfail(reason = "funcion a depricar")
 def test_division():
     assert division(4,0) == 1
+
+def test_modulo():
+    assert modulo(4,1) == 0
