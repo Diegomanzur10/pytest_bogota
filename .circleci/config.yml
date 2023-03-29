@@ -26,10 +26,6 @@ jobs:
 
 
 workflows:
-  just_build:
-    jobs:
-      - build
-
   build_test:
     jobs:
       - build
