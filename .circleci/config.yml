@@ -20,6 +20,7 @@ jobs:
       - run: echo 'export PYTHONPATH="${PYTHONPATH}:{HOME}:/circleci-python"' >> $BASH_ENV
       - run: python -m pip install -r requirements.txt
       - run: pytest -vvv test/test_main.py
+      - run: pytest --cov -vvv code/main.py
 
 
   
